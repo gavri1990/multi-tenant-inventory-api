@@ -21,16 +21,16 @@ A modern REST API project showcasing **cloud-native development** with **multi-t
 
 | Icon | Tool / Service | Purpose |
 |------|----------------|---------|
-| `https://raw.githubusercontent.com/devicons/devicon/master/icons/csharp/csharp-original.svg` | **C#** | Primary programming language |
-| `https://raw.githubusercontent.com/devicons/devicon/master/icons/dot-net/dot-net-original.svg` | **.NET Core** | Web API framework |
-| `https://raw.githubusercontent.com/devicons/devicon/master/icons/microsoftsqlserver/microsoftsqlserver-plain.svg` | **Microsoft SQL Server** | Database |
-| `https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original.svg` | **Docker** | Containerization |
-| `https://raw.githubusercontent.com/devicons/devicon/master/icons/azure/azure-original.svg` | **Azure** | Cloud hosting & deployment |
+| ![C#](https://raw.githubusercontent.com/devicons/devicon/master/icons/csharp/csharp-original.svg) | **C#** | Primary programming language |
+| ![.NET Core](https://raw.githubusercontent.com/devicons/devicon/master/icons/dot-net/dot-net-original.svg) | **.NET Core** | Web API framework |
+| ![SQL Server](https://raw.githubusercontent.com/devicons/devicon/master/icons/microsoftsqlserver/microsoftsqlserver-plain.svg) | **Microsoft SQL Server** | Database |
+| ![Docker](https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original.svg) | **Docker** | Containerization |
+| ![Azure](https://raw.githubusercontent.com/devicons/devicon/master/icons/azure/azure-original.svg) | **Azure** | Cloud hosting & deployment |
 
 ---
 
 ## 📊 Database Schema
-(MultiTenantInventoryAPI/docs/database/dbdiagram.png)  
+!(MultiTenantInventoryAPI/docs/database/dbdiagram.png)  
 
 View the interactive diagram here (read‑only):  
 https://dbdiagram.io/d/69501aed39fa3db27ba3ec20  
