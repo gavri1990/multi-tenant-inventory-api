@@ -19,13 +19,19 @@ A modern REST API project showcasing **cloud-native development** with **multi-t
 
 ## 🛠 Tech Stack
 
-| Icon | Tool / Service | Purpose |
-|------|----------------|---------|
-| ![C#](https://raw.githubusercontent.com/devicons/devicon/master/icons/csharp/csharp-original.svg) | **C#** | Primary programming language |
-| ![.NET Core](https://raw.githubusercontent.com/devicons/devicon/master/icons/dot-net/dot-net-original.svg) | **.NET Core** | Web API framework |
-| ![SQL Server](https://raw.githubusercontent.com/devicons/devicon/master/icons/microsoftsqlserver/microsoftsqlserver-plain.svg) | **Microsoft SQL Server** | Database |
-| ![Docker](https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original.svg) | **Docker** | Containerization |
-| ![Azure](https://raw.githubusercontent.com/devicons/devicon/master/icons/azure/azure-original.svg) | **Azure** | Cloud hosting & deployment |
+**Languages:**  
+![C#](https://img.shields.io/badge/C%23-239120?style=flat&logo=csharp&logoColor=white)  
+
+**Backend:**  
+![.NET Core](https://img.shields.io/badge/.NET_Core-512BD4?style=flat&logo=dotnet&logoColor=white)  
+![REST API](https://img.shields.io/badge/REST_API-FF6F00?style=flat&logo=fastapi&logoColor=white)  
+
+**Database:**  
+![SQL Server](https://img.shields.io/badge/SQL_Server-CC2927?style=flat&logo=microsoftsqlserver&logoColor=white)  
+
+**Tools:**  
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat&logo=docker&logoColor=white)  
+![Azure](https://img.shields.io/badge/Azure-0078D4?style=flat&logo=azure-devops&logoColor=white)  
 
 ---
 
