@@ -30,7 +30,7 @@ A modern REST API project showcasing **cloud-native development** with **multi-t
 ---
 
 ## 📊 Database Schema
-!(MultiTenantInventoryAPI/docs/database/dbdiagram.png)  
+![Schema](MultiTenantInventoryAPI/docs/database/dbdiagram.png) 
 
 View the interactive diagram here (read‑only):  
 https://dbdiagram.io/d/69501aed39fa3db27ba3ec20  
