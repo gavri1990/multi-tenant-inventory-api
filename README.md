@@ -19,19 +19,13 @@ A modern REST API project showcasing **cloud-native development** with **multi-t
 
 ## 🛠 Tech Stack
 
-**Languages:**  
-![C#](https://img.shields.io/badge/C%23-239120?style=flat&logo=csharp&logoColor=white)  
+**Languages:**  ![C#](https://img.shields.io/badge/C%23-239120?style=flat&logo=csharp&logoColor=white)  
 
-**Backend:**  
-![.NET Core](https://img.shields.io/badge/.NET_Core-512BD4?style=flat&logo=dotnet&logoColor=white)  
-![REST API](https://img.shields.io/badge/REST_API-FF6F00?style=flat&logo=fastapi&logoColor=white)  
+**Backend:**  ![.NET Core](https://img.shields.io/badge/.NET_Core-512BD4?style=flat&logo=dotnet&logoColor=white)  ![REST API](https://img.shields.io/badge/REST_API-FF6F00?style=flat&logo=fastapi&logoColor=white)  
 
-**Database:**  
-![SQL Server](https://img.shields.io/badge/SQL_Server-CC2927?style=flat&logo=microsoftsqlserver&logoColor=white)  
+**Database:**  ![SQL Server](https://img.shields.io/badge/SQL_Server-CC2927?style=flat&logo=microsoftsqlserver&logoColor=white)  
 
-**Tools:**  
-![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat&logo=docker&logoColor=white)  
-![Azure](https://img.shields.io/badge/Azure-0078D4?style=flat&logo=azure-devops&logoColor=white)  
+**Tools:**  ![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat&logo=docker&logoColor=white)  ![Azure](https://img.shields.io/badge/Azure-0078D4?style=flat&logo=azure-devops&logoColor=white)  
 
 ---
 
