@@ -1,6 +1,5 @@
-﻿namespace MultiTenantInventoryAPI.Features.SubscriptionTypeFeatures
+namespace MultiTenantInventoryAPI.Features.SubscriptionTypeFeatures;
+
+public class SubscriptionTypeDTO
 {
-    public class SubscriptionTypeDTO
-    {
-    }
 }

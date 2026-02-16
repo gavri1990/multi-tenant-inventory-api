@@ -1,0 +1,11 @@
+root = true
+
+[*.cs]
+# Prefer file-scoped namespace declarations for new and existing C# files
+csharp_style_namespace_declarations = file_scoped:warning
+
+# Optional helpful style rules
+dotnet_sort_system_directives_first = true
+
+# Keep file encoding consistent
+charset = utf-8
