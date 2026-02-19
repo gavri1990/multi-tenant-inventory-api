@@ -1,5 +1,5 @@
+using MultiTenantInventoryAPI.Domain.Aggregates.SubscriptionTypeAggregate;
+
 namespace MultiTenantInventoryAPI.Features.SubscriptionTypeFeatures;
 
-public class SubscriptionTypeDTO
-{
-}
+public record SubscriptionTypeDTO(SubscriptionTypeName Name, SubscriptionTypeFeeBase FeeBase, bool IsActive);

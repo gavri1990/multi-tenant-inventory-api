@@ -4,7 +4,7 @@ public class SubscriptionType(SubscriptionTypeName name, decimal feeBase)
 {
     public SubscriptionTypeId Id { get; private set; }
     public SubscriptionTypeName Name { get; private set; } = name;
-    public decimal FeeBase { get; private set; } = feeBase;
+    public SubscriptionTypeFeeBase FeeBase { get; private set; } = SubscriptionTypeFeeBase.From(feeBase);
     public bool IsActive { get; private set; } = true;
     public DateTime CreatedAtUtc { get; private set; } = DateTime.UtcNow;
     public DateTime UpdatedAtUtc { get; private set; } = DateTime.UtcNow;
@@ -15,6 +15,24 @@ public class SubscriptionType(SubscriptionTypeName name, decimal feeBase)
         if (Name == newName)
             return this;
         Name = newName;
+        UpdatedAtUtc = DateTime.UtcNow;
+        return this;
+    }
+
+    public SubscriptionType UpdateFeeBase(decimal newFeeBase)
+    {
+        if (FeeBase == newFeeBase)
+            return this;
+        FeeBase = SubscriptionTypeFeeBase.From(newFeeBase);
+        UpdatedAtUtc = DateTime.UtcNow;
+        return this;
+    }
+
+    public SubscriptionType UpdateIsActive(bool newIsActive)
+    {
+        if (IsActive == newIsActive) 
+            return this;
+        IsActive = newIsActive;
         UpdatedAtUtc = DateTime.UtcNow;
         return this;
     }
