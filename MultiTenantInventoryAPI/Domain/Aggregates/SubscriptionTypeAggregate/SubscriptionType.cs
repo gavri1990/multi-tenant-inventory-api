@@ -1,10 +1,10 @@
 namespace MultiTenantInventoryAPI.Domain.Aggregates.SubscriptionTypeAggregate;
 
-public class SubscriptionType(SubscriptionTypeName name, decimal feeBase)
+public class SubscriptionType(SubscriptionTypeName name, SubscriptionTypeFeeBase feeBase)
 {
     public SubscriptionTypeId Id { get; private set; }
     public SubscriptionTypeName Name { get; private set; } = name;
-    public SubscriptionTypeFeeBase FeeBase { get; private set; } = SubscriptionTypeFeeBase.From(feeBase);
+    public SubscriptionTypeFeeBase FeeBase { get; private set; } = feeBase;
     public bool IsActive { get; private set; } = true;
     public DateTime CreatedAtUtc { get; private set; } = DateTime.UtcNow;
     public DateTime UpdatedAtUtc { get; private set; } = DateTime.UtcNow;
