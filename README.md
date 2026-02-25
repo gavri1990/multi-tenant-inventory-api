@@ -25,7 +25,7 @@ A modern REST API project showcasing **cloud-native development** with **multi-t
 
 **Database:**  ![SQL Server](https://img.shields.io/badge/SQL_Server-CC2927?style=flat&logo=microsoftsqlserver&logoColor=white)  
 
-**Tools:**  ![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat&logo=docker&logoColor=white)  ![Azure](https://img.shields.io/badge/Azure-0078D4?style=flat&logo=azure-devops&logoColor=white)  
+**Tools:**  ![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat&logo=docker&logoColor=white)  ![Azure](https://img.shields.io/badge/Azure-0078D4?style=flat&logo=azure&logoColor=white)  
 
 ---
 
