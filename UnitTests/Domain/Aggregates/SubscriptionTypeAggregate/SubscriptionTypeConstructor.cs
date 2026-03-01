@@ -21,4 +21,13 @@ public class SubscriptionTypeConstructor
 
         _testSubscriptionType.Name.Should().Be(_testName);
     }
+
+
+    [Fact]
+    public void InitializesFeeBase()
+    {
+        _testSubscriptionType = CreateSubscriptionType();
+
+        _testSubscriptionType.FeeBase.Should().Be(_testFeeBase);
+    }
 }
