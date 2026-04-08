@@ -1,6 +1,6 @@
 using Vogen;
 
-namespace MultiTenantInventoryAPI.Domain.Aggregates.SubscriptionTypeAggregate;
+namespace MultiTenantInventoryAPI.Core.Aggregates.SubscriptionTypeAggregate;
 
 [ValueObject<string>(conversions: Conversions.SystemTextJson)]
 public partial struct SubscriptionTypeName

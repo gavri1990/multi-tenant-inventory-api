@@ -1,4 +1,4 @@
-namespace MultiTenantInventoryAPI.Domain.Aggregates.SubscriptionTypeAggregate;
+namespace MultiTenantInventoryAPI.Core.Aggregates.SubscriptionTypeAggregate;
 
 public class SubscriptionType(SubscriptionTypeName name, SubscriptionTypeFeeBase feeBase)
 {

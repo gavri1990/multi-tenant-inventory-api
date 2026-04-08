@@ -1,5 +1,7 @@
 using Vogen;
 
+namespace MultiTenantInventoryAPI.Core.Aggregates.SubscriptionTypeAggregate;
+
 [ValueObject<decimal>]
 public partial struct SubscriptionTypeFeeBase
 {

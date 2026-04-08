@@ -1,0 +1,23 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Include="..\..\..\..\.nuget\packages\vogen\8.0.4\contentFiles\any\netstandard2.0\Vogen.targets" Link="Vogen.targets">
+      <Private>False</Private>
+      <NuGetPackageVersion>8.0.4</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <NuGetPackageId>Vogen</NuGetPackageId>
+      <Pack>false</Pack>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Vogen" Version="8.0.5" />
+  </ItemGroup>
+
+</Project>

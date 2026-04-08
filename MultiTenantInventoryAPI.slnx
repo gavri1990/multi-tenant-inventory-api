@@ -1,4 +1,7 @@
 <Solution>
-  <Project Path="MultiTenantInventoryAPI/MultiTenantInventoryAPI.csproj" />
+  <Project Path="Core/MultiTenantInventoryAPI.Core.csproj" Id="1d762ca4-bd43-4386-acd7-3a16121ad9b6" />
+  <Project Path="MultiTenantInventoryAPI.Infrastructure/MultiTenantInventoryAPI.Infrastructure.csproj" Id="83d2614d-c8b7-4489-beea-4b6d26a41115" />
+  <Project Path="MultiTenantInventoryAPI.UseCases/MultiTenantInventoryAPI.UseCases.csproj" Id="b6729b08-da1e-478b-a05d-d12ea92561c1" />
+  <Project Path="MultiTenantInventoryAPI/MultiTenantInventoryAPI.Web.csproj" />
   <Project Path="UnitTests/MultiTenantInventoryAPI.UnitTests.csproj" Id="9f13e130-3c76-43d2-ae00-dc54aebb4ebd" />
 </Solution>
