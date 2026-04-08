@@ -16,8 +16,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Core\MultiTenantInventoryAPI.Core.csproj" />
-    <ProjectReference Include="..\MultiTenantInventoryAPI\MultiTenantInventoryAPI.Web.csproj" />
+    <ProjectReference Include="..\MultiTenantInventoryAPI.Core\MultiTenantInventoryAPI.Core.csproj" />
+    <ProjectReference Include="..\MultiTenantInventoryAPI.Web\MultiTenantInventoryAPI.Web.csproj" />
   </ItemGroup>
 
   <ItemGroup>
