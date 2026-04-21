@@ -1,8 +1,8 @@
 namespace MultiTenantInventoryAPI.Core.Aggregates.SubscriptionTypeAggregate;
 
-public class SubscriptionType(SubscriptionTypeName name, SubscriptionTypeFeeBase feeBase)
+public class SubscriptionType(SubscriptionTypeName name, SubscriptionTypeFeeBase feeBase): 
+    EntityWithId<SubscriptionType, SubscriptionTypeId>
 {
-    public SubscriptionTypeId Id { get; private set; }
     public SubscriptionTypeName Name { get; private set; } = name;
     public SubscriptionTypeFeeBase FeeBase { get; private set; } = feeBase;
     public bool IsActive { get; private set; } = true;
