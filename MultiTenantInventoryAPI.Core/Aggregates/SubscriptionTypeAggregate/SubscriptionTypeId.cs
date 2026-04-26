@@ -1,5 +1,8 @@
 using Vogen;
 
+[assembly: VogenDefaults(
+    staticAbstractsGeneration: StaticAbstractsGeneration.MostCommon | StaticAbstractsGeneration.InstanceMethodsAndProperties)]
+
 namespace MultiTenantInventoryAPI.Core.Aggregates.SubscriptionTypeAggregate;
 
 [ValueObject<int>]
