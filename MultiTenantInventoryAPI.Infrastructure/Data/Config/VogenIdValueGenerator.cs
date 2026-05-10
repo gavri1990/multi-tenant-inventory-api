@@ -46,5 +46,5 @@ internal class VogenIdValueGenerator<TContext, TEntityWithId, TId>: ValueGenerat
             es.Any() ? es.Max(e => e.Id.Value) : 0;
     }
 
-    public override bool GeneratesTemporaryValues => false;
+    public override bool GeneratesTemporaryValues => false; //the generated values should be saved in the database
 }

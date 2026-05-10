@@ -1,6 +1,7 @@
 using Vogen;
 
 [assembly: VogenDefaults(
+    conversions: Conversions.EfCoreValueConverter,  // Generates the converter for all Value Objects
     staticAbstractsGeneration: StaticAbstractsGeneration.MostCommon | StaticAbstractsGeneration.InstanceMethodsAndProperties)]
 
 namespace MultiTenantInventoryAPI.Core.Aggregates.SubscriptionTypeAggregate;
