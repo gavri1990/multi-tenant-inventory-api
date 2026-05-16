@@ -2,7 +2,7 @@ using Vogen;
 
 namespace MultiTenantInventoryAPI.Core.Aggregates.SubscriptionTypeAggregate;
 
-[ValueObject<string>(conversions: Conversions.SystemTextJson)]
+[ValueObject<string>]
 public partial struct SubscriptionTypeName
 {
     public const int MaxLength = 100;

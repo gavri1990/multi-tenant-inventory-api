@@ -10,7 +10,21 @@ public class SubscriptionTypeConfiguration : IEntityTypeConfiguration<Subscripti
     {
         builder.Property(entity => entity.Id)
             .HasValueGenerator<VogenIdValueGenerator<DbContext, SubscriptionType, SubscriptionTypeId>>()
-            .HasConversion(new SubscriptionTypeId.EfCoreValueConverter())
+            .HasVogenConversion()
+            .IsRequired();
+
+        builder.Property(entity => entity.Name)
+            .HasMaxLength(SubscriptionTypeName.MaxLength)
+            .HasVogenConversion()
+            .IsRequired();
+
+        builder.Property(entity => entity.FeeBase)
+            .HasPrecision(18, 2)
+            .HasVogenConversion()
+            .IsRequired();
+
+        builder.Property(entity => entity.IsActive)
+            .HasDefaultValue(true)
             .IsRequired();
     }
 }
