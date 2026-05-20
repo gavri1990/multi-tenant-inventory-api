@@ -5,9 +5,9 @@ public class SubscriptionType(SubscriptionTypeName name, SubscriptionTypeFeeBase
 {
     public SubscriptionTypeName Name { get; private set; } = name;
     public SubscriptionTypeFeeBase FeeBase { get; private set; } = feeBase;
-    public bool IsActive { get; private set; } = true;
-    public DateTime CreatedAtUtc { get; private set; } = DateTime.UtcNow;
-    public DateTime UpdatedAtUtc { get; private set; } = DateTime.UtcNow;
+    public bool IsActive { get; private set; } = true;  //in case an update is attempted without using the methods below, to avoid sending false to the database
+    public DateTime CreatedAtUtc { get; private set; }
+    public DateTime UpdatedAtUtc { get; private set; } = DateTime.UtcNow; //in case an update is attempted without using the methods below, to avoid sending the default DateTime value to the database
 
 
     public SubscriptionType UpdateName(SubscriptionTypeName newName)
