@@ -16,4 +16,9 @@
     <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="10.0.1" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\MultiTenantInventoryAPI.Core\MultiTenantInventoryAPI.Core.csproj" />
+    <ProjectReference Include="..\MultiTenantInventoryAPI.Infrastructure\MultiTenantInventoryAPI.Infrastructure.csproj" />
+  </ItemGroup>
+
 </Project>

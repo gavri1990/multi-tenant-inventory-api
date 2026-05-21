@@ -1,7 +1,7 @@
 using System.Reflection;
 using MultiTenantInventoryAPI.Core.Aggregates.SubscriptionTypeAggregate;
 
-namespace MultiTenantInventoryAPI.Infrastructure;
+namespace MultiTenantInventoryAPI.Infrastructure.Data;
 
 public class AppDbContext(DbContextOptions<AppDbContext> options): DbContext(options)
 {

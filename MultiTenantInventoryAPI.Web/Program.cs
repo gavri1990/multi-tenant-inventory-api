@@ -1,3 +1,6 @@
+using Microsoft.EntityFrameworkCore;
+using MultiTenantInventoryAPI.Infrastructure.Data;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -5,6 +8,10 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllers();
 // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
 builder.Services.AddOpenApi();
+
+var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");  //looks up the merged appsettings.*.json files
+builder.Services.AddDbContext<AppDbContext>(options =>
+    options.UseSqlServer(connectionString, o => o.UseCompatibilityLevel(170))); //SQL Server 2025 compatibility
 
 var app = builder.Build();
 
