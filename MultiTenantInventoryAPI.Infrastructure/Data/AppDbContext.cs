@@ -11,5 +11,10 @@ public class AppDbContext(DbContextOptions<AppDbContext> options): DbContext(opt
     {
         base.OnModelCreating(modelBuilder);
         modelBuilder.ApplyConfigurationsFromAssembly(Assembly.GetExecutingAssembly());
+
+        foreach (var entity in modelBuilder.Model.GetEntityTypes())
+        {
+            entity.SetTableName(entity.DisplayName());  //avoiding turning the name to plural by preserving the exact name of the entity
+        }
     }
 }

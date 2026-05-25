@@ -37,7 +37,7 @@ public class SubscriptionTypeConfiguration : IEntityTypeConfiguration<Subscripti
                 x => x,
                 x => DateTime.SpecifyKind(x, DateTimeKind.Utc))
             .IsRequired().
-            Metadata.SetAfterSaveBehavior(PropertySaveBehavior.Ignore);
+            Metadata.SetAfterSaveBehavior(PropertySaveBehavior.Ignore); //will not be further modified after the initial save to the database
 
         builder.Property(entity => entity.UpdatedAtUtc)
             .HasDefaultValueSql("SYSUTCDATETIME()")
