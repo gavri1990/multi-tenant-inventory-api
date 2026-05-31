@@ -23,6 +23,7 @@
   <ItemGroup>
     <ProjectReference Include="..\MultiTenantInventoryAPI.Core\MultiTenantInventoryAPI.Core.csproj" />
     <ProjectReference Include="..\MultiTenantInventoryAPI.Infrastructure\MultiTenantInventoryAPI.Infrastructure.csproj" />
+    <ProjectReference Include="..\MultiTenantInventoryAPI.UseCases\MultiTenantInventoryAPI.UseCases.csproj" />
   </ItemGroup>
 
 </Project>

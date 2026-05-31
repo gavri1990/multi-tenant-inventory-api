@@ -1,13 +1,13 @@
 namespace MultiTenantInventoryAPI.Core.Aggregates.SubscriptionTypeAggregate;
 
-public class SubscriptionType(SubscriptionTypeName name, SubscriptionTypeFeeBase feeBase): 
+public class SubscriptionType(SubscriptionTypeName name, SubscriptionTypeFeeBase feeBase, bool isActive): 
     EntityWithId<SubscriptionType, SubscriptionTypeId>, IAggregateRoot
 {
     public SubscriptionTypeName Name { get; private set; } = name;
     public SubscriptionTypeFeeBase FeeBase { get; private set; } = feeBase;
-    public bool IsActive { get; private set; } = true;  //in case an update is attempted without using the methods below, to avoid sending false to the database
+    public bool IsActive { get; private set; } = isActive;
     public DateTime CreatedAtUtc { get; private set; }
-    public DateTime UpdatedAtUtc { get; private set; } = DateTime.UtcNow; //in case an update is attempted without using the methods below, to avoid sending the default DateTime value to the database
+    public DateTime UpdatedAtUtc { get; private set; }
 
 
     public SubscriptionType UpdateName(SubscriptionTypeName newName)

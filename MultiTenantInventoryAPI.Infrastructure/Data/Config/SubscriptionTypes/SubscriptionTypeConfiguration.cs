@@ -12,7 +12,7 @@ public class SubscriptionTypeConfiguration : IEntityTypeConfiguration<Subscripti
         builder.HasKey(entity => entity.Id); //EF Core would do it either way automatically, since the field is named exactly 'Id'
 
         builder.Property(entity => entity.Id)
-            .HasValueGenerator<VogenIdValueGenerator<DbContext, SubscriptionType, SubscriptionTypeId>>()
+            .HasValueGenerator<VogenIdValueGenerator<AppDbContext, SubscriptionType, SubscriptionTypeId>>()
             .HasVogenConversion()
             .IsRequired();
 
@@ -36,8 +36,8 @@ public class SubscriptionTypeConfiguration : IEntityTypeConfiguration<Subscripti
             .HasConversion(
                 x => x,
                 x => DateTime.SpecifyKind(x, DateTimeKind.Utc))
-            .IsRequired().
-            Metadata.SetAfterSaveBehavior(PropertySaveBehavior.Ignore); //will not be further modified after the initial save to the database
+            .IsRequired()
+            .Metadata.SetAfterSaveBehavior(PropertySaveBehavior.Ignore); //will not be further modified after the initial save to the database
 
         builder.Property(entity => entity.UpdatedAtUtc)
             .HasDefaultValueSql("SYSUTCDATETIME()")
@@ -46,5 +46,6 @@ public class SubscriptionTypeConfiguration : IEntityTypeConfiguration<Subscripti
                 x => x,
                 x => DateTime.SpecifyKind(x, DateTimeKind.Utc))
             .IsRequired();
+            //.Metadata.SetAfterSaveBehavior(PropertySaveBehavior.Save); // Allow domain methods to modify it later
     }
 }

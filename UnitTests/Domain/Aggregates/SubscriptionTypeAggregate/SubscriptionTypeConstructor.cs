@@ -4,11 +4,12 @@ public class SubscriptionTypeConstructor
 {
     private readonly SubscriptionTypeName _testName = SubscriptionTypeName.From("testName");
     private readonly SubscriptionTypeFeeBase _testFeeBase = SubscriptionTypeFeeBase.From(125m);
+    private readonly bool _testIsActive = true;
     private SubscriptionType? _testSubscriptionType;
 
     private SubscriptionType CreateSubscriptionType()
     {
-        return new SubscriptionType(_testName, _testFeeBase);
+        return new SubscriptionType(_testName, _testFeeBase, _testIsActive);
     }
 
     [Fact]

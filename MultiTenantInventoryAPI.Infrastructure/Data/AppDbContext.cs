@@ -1,9 +1,10 @@
 using System.Reflection;
 using MultiTenantInventoryAPI.Core.Aggregates.SubscriptionTypeAggregate;
+using MultiTenantInventoryAPI.Core.SeedWork;
 
 namespace MultiTenantInventoryAPI.Infrastructure.Data;
 
-public class AppDbContext(DbContextOptions<AppDbContext> options): DbContext(options)
+public class AppDbContext(DbContextOptions<AppDbContext> options): DbContext(options), IUnitOfWork
 {
     public DbSet<SubscriptionType> SubscriptionTypes => Set<SubscriptionType>();    //expression-bodied read-only property
 
