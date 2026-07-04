@@ -1,1 +1,14 @@
-﻿
+﻿@MultiTenantInventoryAPI.Web_HostAddress = https://localhost:7019
+
+POST {{MultiTenantInventoryAPI.Web_HostAddress}}/api/subscriptiontypes
+Content-Type: application/json
+
+{
+  //SubscriptionTypeDTO
+}
+
+###
+
+GET {{MultiTenantInventoryAPI.Web_HostAddress}}/api/subscriptiontypes
+
+###

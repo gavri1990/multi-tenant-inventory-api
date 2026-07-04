@@ -5,7 +5,7 @@ public interface IRepository<T, TId> where T: EntityWithId<T, TId>, IAggregateRo
     IUnitOfWork UnitOfWork { get; }  //the implementing class must have a property that implements IUnitOfWork
     Task<IEnumerable<T>> GetAllAsync(CancellationToken cancellationToken = default);
     Task<T?> GetByIdAsync(TId id, CancellationToken cancellation = default);
-    //since vogen generates the ids, there will be no newtork call to the db for database generation,
+    //since Vogen generates the ids, there will be no network call to the db for database generation,
     //so no async nor cancellation token needed in the Add method below
     void Add(T entityWithId); 
     void Remove(T entityWithId);

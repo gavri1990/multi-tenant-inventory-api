@@ -46,6 +46,5 @@ public class SubscriptionTypeConfiguration : IEntityTypeConfiguration<Subscripti
                 x => x,
                 x => DateTime.SpecifyKind(x, DateTimeKind.Utc))
             .IsRequired();
-            //.Metadata.SetAfterSaveBehavior(PropertySaveBehavior.Save); // Allow domain methods to modify it later
     }
 }
